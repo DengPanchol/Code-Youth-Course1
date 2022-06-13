@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form name="register">
+        Name: <input type="text" name="fname" size="20" placeholder="John"/><br/><br/>
+        Address: <input type="text" name="addr" size="20" /><br/><br/>
+        Password: <input type="Password" name="pwd" size="20" /><br/><br/>
+        Description: <textarea rows="5" cols="10" ></textarea><br/><br/>
+        Email: <input type="email" name="email"/><br/><br/>
+        Date: <input type="date" name="date" value="12-06-2022"/><br/>
+        Select your subjects:
+            <input type="checkbox" name="Maths" value="maths">Maths
+            <input type="checkbox" name="Sci" value="science">Science
+            <input type="checkbox" name="History" value="history">History
+        <br/><br/>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male">male
+        <input type="radio" name="gender" id="gender" value="female">female
+        <input type="submit" value="Register" />
+    </form>
+</body>
+</html>
