@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1.If month has 31 days, console.log() 
+        "This month has 31 days, also if month has 30 days, 
+        console.log() "This month has 30 days.
+        hint (you have to use 'or' operator
+        */
+        let num = Math.floor(Math.random()*10+1)
+        let month=num;
+        console.log(`Month: ${month}`);
+        if(month== 1 || month == 3 || month == 5|| month == 7 || month == 8 || month == 10 || month == 12){
+            console.log("This month has 31 days");
+        }else if(month == 2){
+            console.log("This month has 28 or 29 days");
+        }else{
+            console.log("This month has 30 days")
+        }
+
+        /*
+        2. Write a letter grade based on score out of 100 
+        (ex: if mark is (90-100) write A+, 
+        if mark is 80-90, write A, and so forth)
+        */
+        let result = Math.floor(Math.random()*100)
+        let mark = result;
+        console.log(`Mark: ${mark}`);
+        if(mark>=90){
+            console.log("A+");
+        }else if(mark>=85 && mark<90){
+            console.log("A");
+        }else if(mark>=80&&mark<85){
+            console.log("A-");
+        }else if(mark>=77&&mark<80){
+            console.log("B+")
+        }else if(mark>=73&&mark<77){
+            console.log("B")
+        }else if(mark>=70&&mark<73){
+            console.log("B-")
+        }else if(mark>=67&&mark<70){
+            console.log("C+")
+        }else if(mark>=63&&mark<67){
+            console.log("C")
+        }else if(mark>=60&&mark<63){
+            console.log("C-")
+        }else if(mark>=57&&mark<60){
+            console.log("D+")
+        }else if(mark>=53&&mark<57){
+            console.log("D")
+        }else if(mark>=50&&mark<53){
+            console.log("D-")
+        }else{
+            console.log("F")
+        }
+    </script>
+</body>
+</html>
