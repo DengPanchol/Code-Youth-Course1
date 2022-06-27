@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // This function log first and last name with them as parameters
+        function firstLastName(first,last){
+            console.log("First name: ", first);
+            console.log("Last nmae: ", last);
+        }
+
+        // This function log month and day as parameters
+        function monthDay(month,day){
+            console.log("Month is ", month, " and the day is ", day);
+            //console.log("Day: ", day);
+        }
+
+        // This function log city and province as parameters
+        function cityProvince(city,province){
+            console.log("I live in ", province, ", in the city of ", city);
+            //console.log("Province: ", province);
+        }
+
+        /*1. Write a function called welcome Function with the parameter greeting
+        inside the function console.log(greeting)
+        When you run the function pass in the argument "Hello World"
+        */
+       function welcome(greeting){
+            console.log(greeting);
+       }
+
+       /*
+        2. Write a function that takes a number and divides it by two
+        Make sure to console.log() the result
+        When you run the function pass a number as the argument
+        */
+       function divide(number){
+        let result = number/2;
+        console.log("The result after dividing ",number," by 2 is", result);
+       }
+
+
+        /*
+        Question 4: Create a function with 2 parameters, you going to add those
+        parameters together and log them
+        */
+       function add(a,b){
+        let sum = a+b;
+        console.log("The sum of ",a," and ",b," is ", sum);
+       }
+
+       /*Question 5: Create a function with 2 parameters, you going to subtract
+      those parameters together and log them
+      */
+        function subtract(a,b){
+            let result = a-b;
+            console.log("The result after subtracting ",b," from ",a," is ",result);
+        }
+        /*
+        Question 7: Create a function with 2 parameters, 
+        you going to divide those parameters together and log them
+        */
+       function division(a,b){
+        if(b==0 || a == 0){
+            console.log("None of the params can equal zero");
+        }else{
+            console.log("The result after dividing ",a," by ",b," is ",a/b);
+        }
+       }
+
+        // prompt the user to enter details
+        let first = "Deng"
+        //let first = prompt("Please enter first name: ");
+        //let last = prompt("Please enter last name: ");
+        let last = "Mading"
+        // function call
+        firstLastName(first,last);
+
+        // prompt the user to enter details
+        //let month = prompt("Please enter month: ");
+        //let day = prompt("Please enter day: ");
+        // function call
+        let month = "June", day = "27th"
+        monthDay(month,day);
+
+        // prompt the user to enter details
+        //let city = prompt("Please enter city: ");
+        //let province = prompt("Please enter province: ");
+        // function call
+        let city = "Ottawa", province = "Ontario"
+        cityProvince(city,province);
+
+        welcome("Hello World")
+        divide(50);
+
+        add(20,10);
+        subtract(15,6);
+        division(0, 4);
+
+    </script>
+</body>
+</html>
