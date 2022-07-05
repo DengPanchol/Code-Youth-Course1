@@ -10,3 +10,11 @@ console.log("The 7th element of the array is ", array_name[6]);
 const myLength = ["Deng", "Steven", "John"];
 console.log("The length of the array is ", myLength.length);
 console.log("The first element of the array is",myLength[0]);
+
+let arr1 = [5,6,7,8,9,10];
+
+//for loop to access all elements of the array
+for(let i = 0; i < arr1.length; i++){
+    arr1[i]=arr1[i]*arr1[i];
+    console.log("Square: ", arr1[i]);
+}
