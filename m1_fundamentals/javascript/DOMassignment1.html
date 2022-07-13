@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>Colours</ul>
+    <li id="color1">Red</li>
+    <li id="color2">Green</li>
+    <li id="color3">Blue</li>
+    <!-- <h1 id="heading">Welcome to code youth</h1>
+    <p id="one">This is the first paragraph</p>
+    <p>This is the second paragraph</p> -->
+    <button onclick="change()">Change</button>
+    <script>
+        function change() {
+            const red = document.getElementById("color1")
+            const green = document.getElementById("color2")
+            const blue = document.getElementById("color3")
+            // const head=document.getElementById("heading");
+
+            red.style.color="Red";
+            red.style.fontSize="20px";
+
+            green.style.color="Green";
+            green.style.fontSize="20px";
+
+            blue.style.color="Blue";
+            blue.style.fontSize="20px";
+            
+        }
+    </script>
+</body>
+</html>

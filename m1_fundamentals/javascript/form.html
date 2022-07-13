@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="Register" onsubmit="return validate()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div>
+        
+    </form>
+    <script>
+        const myName = document.getElementById('name');
+        console.log("Name:", myName);
+        myName.addEventListener('focus',()=> myName.style.background = "red");
+
+        function validate(){
+            const password = document.getElementById('pwd');
+            if(password.value.length<5){
+                alert("Password must be at least 5 characters");
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</body>
+</html>

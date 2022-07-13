@@ -45,5 +45,3 @@ const Car = {
     // using function as a value
     
 }
-
-person.greet(); // hello

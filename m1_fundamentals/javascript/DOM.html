@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to code youth</h1>
+    <p id="one">This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <button onclick="change()">Change</button>
+    <script>
+        function change() {
+            document.getElementById("one").innerHTML ="Changed paragraph";
+            const head=document.getElementById("heading");
+            head.style.color="Red";
+            head.style.fontSize="20px";
+            head.innerHTML="New Heading";
+        }
+    </script>
+</body>
+</html>
