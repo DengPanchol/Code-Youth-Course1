@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="swap.js"></script>
+</head>
+<body>
+    <script>
+
+        /*
+        1. Make 2 numbers in two different variables, 
+        then check which is one is bigger in an if statement
+        */
+        let a =25;
+        let b = 27;
+        if (a>b) {
+            console.log("a is greater than b")
+        } else if(b>a){
+            console.log("b is grater than a")
+        }else{
+            console.log("The numbers are equal")
+        }   
+        
+        /*
+        2. Create a variable for a persona age, 
+        then a variable for the legal voting age, 
+        then write a message of either you are able to vote 
+        or not able to vote in the console.log
+        */
+       let personAge = 21;
+       let legalVotingAge = 18;
+       if(personAge>=legalVotingAge){
+            console.log("You are able to vote")
+       }else{
+            console.log("You are not able to vote")
+       }
+
+       
+       /*
+       3. Check if a number is even or odd 
+       (create a variable that has number in it and check in if statement)
+       */
+      let num =28;
+      if(num%2==0){
+        console.log("The number is even")
+      }else{
+        console.log("The number is odd")
+      }
+
+      /*
+      4. Check if a year is a leap year in an if statement 
+      (also create a variable for the year you are checking)
+      */
+     let year = 1997;
+      if(year%4==0){
+        console.log("This is a leap year")
+      }else{
+        console.log("This is not a leap year")
+      }
+
+
+
+      /*
+.1
+//Copy this code vvv and paste above where you answer the question//
+*/
+let inputA = 5
+let inputB = 2
+
+//Copy this code ^^^ and paste above where you answer the question//
+/*
+If inputA is greater than inputB console.log "inputA is greater than inputB"
+If inputA is less than inputB console.log "inputA is less than inputB"
+*/
+if(inputA>inputB){
+    console.log("inputA is greater than inputB");
+}else{
+    console.log ("inputA is less than inputB");
+}
+
+/*
+.2
+
+//Copy this code vvv and paste above where you answer the question//
+*/
+let studentMark = Math.floor(Math.random()*100)
+let passingGrade = 70
+
+//Copy this code ^^^ and paste above where you answer the question//
+
+/*
+Write an if statement after the above code to find if studentMark is greater or less than the passing grade
+If the student does not pass console.log studentMark and then console.log "The student failed"
+Otherwise if the student meets or exceeds passingGrade console.log studentMark and then console.log "The student passed"
+*/
+if(studentMark<passingGrade){
+    console.log ("The student failed")
+}else{
+    console.log ("The student passed")
+}
+
+
+/*
+3.
+//Copy this code vvv and paste above where you answer the question//
+*/
+let rng1 = Math.floor(Math.random()*10)
+let rng2 = Math.floor(Math.random()*10)
+let result;
+result=rng1-rng2;
+//Copy this code ^^^ and paste above where you answer the question//
+/*
+Write an if statement where result changes to either "rng1 is greater than rng2", "rng2 is greater than rng1", or "rng1 and rng2 are the same"
+Then console.log result AFTER the last if statement
+*/
+if(result>0){
+    console.log("rng1 is greater than rng2");
+}else if(result<0){
+    console.log("rng2 is greater than rng1");
+}else{
+    console.log("rng1 and rng2 are the same");
+}
+    </script>
+</body>
+</html>

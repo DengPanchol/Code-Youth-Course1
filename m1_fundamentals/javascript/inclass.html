@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+    </div>
+    <div>
+        <ul>This is the second div with ul inside</ul>
+    </div>
+    <h1>Hello World</h1>
+    <!-- question 1: create a p tag and append to page -->
+    <script>
+        //Question 2: In JS, create a div with 2 p tags inside with some text, 
+        //then append to the page
+        const div1 = document.createElement("div");
+        document.body.appendChild(div1);
+
+        const pTag1 = document.createElement("p");
+        pTag1.innerHTML = "This will be appended to the div page!";
+        div1.appendChild(pTag1);
+
+        const pTag2 = document.createElement("p");
+        pTag2.innerHTML = "This will be appended to the div page!";
+        div1.appendChild(pTag2);
+
+        // Question 3: In JS, create a div with ul tag which has 3 li inside, 
+        // all with text, then append to the page (for loop is optional)
+        const div2 = document.createElement("div");
+        
+    </script>
+</body>
+</html>

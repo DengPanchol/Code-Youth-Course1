@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Question 3: Use a loop to count up 10 and go up by 2
+        let n = 10;
+        for(let i=0;i<=n; i+=2){
+            console.log("i: ", i)
+        }
+        console.log("End")
+
+        //Question 4: Use a loop to count down from 10 and go down by 2
+        let k = 0;
+        for(let i=10;i>=k; i-=2){
+            console.log("i: ", i)
+        }
+        console.log("End")
+
+        /*rite a for loop that loops 3 times
+        inside the loop write a switch statement where every case is the value of i (ex: 
+        case 0:, case 1:, etc...)
+        inside each case document.write() an li with whatever you want in it
+        */
+        let n1 = 3;
+        let num;
+        for(let i = 1; i<=n1; i++){
+            switch(i){
+                case 1: nun = 1;
+                document.write("<li>1st loop</li>")
+                break;
+                case 2: num = 2;
+                
+                document.write("<li>2nd loop</li>")
+                break;
+                case 3: num = 3;
+                document.write("<li>3rd loop</li>")
+                break;
+                case 4: num = 4;
+                document.write("<li>4th loop</li>")
+                break;
+            }
+
+        }
+
+    </script>
+</body>
+</html>

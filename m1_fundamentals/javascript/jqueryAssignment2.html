@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">User Name:</label>
+            <input type="text" id="name" name="name">
+        </div> 
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+
+        <!-- <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div> -->
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $("form").children().children(":even").css("background-color", "blue")
+        $("form").children().children(":odd").css("background-color", "green")
+    </script>
+
+</body>
+</html>

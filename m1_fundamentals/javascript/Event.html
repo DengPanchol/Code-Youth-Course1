@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to Code Youth</h1>
+    <h1 id="heading1">Welcome to Code Youth part 2</h1>
+    <p>Click this paragraph</p>
+	<button onmouseover="change()">change</button>
+	<script>
+		function change(){
+            document.querySelector('#heading').style.color = "purple";
+		}
+        const element = document.getElementById("heading");
+        element.addEventListener("mouseover", message);
+        function message() {
+            document.querySelector('#heading1').style.color = "green";
+        }
+
+    </script>
+    <script>
+        // Create a paragraph element and change its background colour 
+        // to great when click over it using p.onclick
+        // Gray not great sorry
+        // const button = document.getElementById("button");
+        // function message() {
+        //     document.querySelector('#heading1').style.color = "green";
+        // }
+        // button.onclick = message;
+    </script>
+</body>
+</html>

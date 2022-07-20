@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="Register">
+        <div>
+            <label for="name">User Name:</label>
+            <input type="text" id="name" name="name">
+        </div> 
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+
+        <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div>
+    </form>
+    <!-- Question 1: Create a form with a username input and then get the value typed in when form is submitted. 
+    Console log the value -->
+    <script>
+        const Register = document.getElementById("Register");
+        // const username = document.getElementById('name');
+        Register.addEventListener ("submit", function getUser(e){
+            e.preventDefault();
+            console.log("Name", Register.name.value);
+        });
+
+        // const emailAddress = document.getElementById('email');
+        // console.log(value.emailAddress);
+    </script>
+
+    <!-- Question 2: Add an email input to the previous form and then get its value on submit. 
+    Console log the value -->
+
+    <!-- Question 3: Add a password input to the previous form then get its value on submit. 
+    Then console log the value -->
+</body>
+</html>
